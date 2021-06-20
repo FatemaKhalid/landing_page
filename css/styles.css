@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top-btn {
+    visibility: hidden;
+    height: 0;
+}
+
+#top-btn.active {
+    visibility: visible;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+#top-btn__content--desk {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #4f4d53;
+    transition: 0.2s;
+    background: #e8be02;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+#top-btn__content--desk:hover {
+    color: #e8be02;
+}
+#top-btn__content--desk > span {
+    color: white;
+}
+
+.navBar {
+    display: inline-block;
+    height: 48px;
+    width: 100%;
+    background-color: #4f4d53;
+    text-align: center;
+}
+.navBar-Container {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.myLogo {
+    float: left;
+    padding: 1rem;
+}
+.nav-list {
+    width: 70%;
+    display: inline-block;
+}
+.nav-list__item {
+    display: inline-block;
+    padding: 1rem;
+}
+.nav-list__link {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+}
+.nav-list__link:hover {
+    color: aliceblue;
+    transform: scale(1.2);
+}
+
+.searchDiv {
+    width: 20%;
+    float: right;
+    padding: 1rem;
+    background-color: rgb(35, 34, 36);
+}
+
+.header {
+    display: inline-block;
+    background-image: url("../media/img_hero.jpg");
+    width: 100%;
+    height: 500px;
+    font-size: 100px;
+    color: #4f4d53;
+    font-family: Roboto;
+    font-weight: 900;
+}
+
+.headerText,
+.teamDiv {
+    width: 70%;
+    margin: 10% 20%;
+}
+.foundersImg {
+    width: 50%;
+    margin: auto;
+}
+.foundersImg img,
+.teamDiv Img {
+    border-radius: 50%;
+}
+
+.startDiv {
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.startDiv h2 {
+    font-size: 64px;
+    color: #e8be02;
+    font-family: Roboto;
+    font-weight: 900;
+}
+
+.startDiv p,
+.teamMem p {
+    font-size: 20px;
+    color: #4f4d53;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.teamDiv {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+.teamMem {
+    display: inline-block;
+    width: 30%;
+}
+.teamInf {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer {
+    background-color: #4f4d53;
+    width: 100%;
+    height: 320px;
+    text-align: center;
+}
+.footer h3 {
+    font-size: 20px;
+    color: #e8be02;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.footer h4 {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 100;
+}
+
+.footerSec {
+    padding-top: 50px;
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+.befFooter {
+    height: 10px;
+    background-color: #e8be02;
+    width: 100%;
+}

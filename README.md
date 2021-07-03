@@ -1,6 +1,12 @@
+# Landing Page
+
+Landing Page is a web page written with vanillaJS that is a tarting page to introduce your business.
+
+## Installation
+
 To run the program open index.html file in your browser
 
-Explanation:
+## Explanation:
 To select the sections, each section has a class name "section"/ could also use the tag <section> for better semantic in HTML and use getElementsByTagName
 then the id is used as text for the navbar to be clicked to navigate to the intended section
 

@@ -1,3 +1,6 @@
+/**
+ * This function creates the list in nav bar dynamically from elements with id and className "section"
+ */
 function createNavList() {
     const navUl = document.getElementById('nav-list');
     const navSections = document.querySelectorAll('.section');
@@ -11,19 +14,28 @@ function createNavList() {
         li.append(anch);
         navUl.append(li);
         li.addEventListener('click', () => {
-            setTimeout(() => {
-                removeHashFromURL();
-            }, 5);
+            navSections.forEach(sec => {
+                sec.classList.remove("active")
+            }
+            );
+            li.classList.add("active");
+            li.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
         }
 
         );
     }
 
 }
-
+/**
+ * This function removes the hash indicating the section scrolled to in the URL
+ */
 function removeHashFromURL() {
     history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
 }
+
+/**
+ * This function scrolls to the top of the page then button is clicked
+ */
 function toTopScroll() {
     let toTopBtn = document.getElementById('top-btn__content--desk');
 
@@ -34,6 +46,7 @@ function toTopScroll() {
 
     let scrollPosition = 0;
     window.addEventListener('scroll', function () {
+        removeHashFromURL();
         if ((document.body.getBoundingClientRect()).top > scrollPosition) {
             document.getElementById('top-btn').classList.remove('active');
         } else {
